@@ -1,0 +1,898 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300400500&display=swap')
+
+:root
+    --def:#bfd2de
+    --alt:#e3c09b
+    --bg:#f0f8fd
+    --sty1:#bb7db2
+    --sty2:#6f6c9e
+    --cblack:#202124
+
+html, body
+    font-family: 'Roboto', sans-serif
+
+.btn-outline-gray
+    color: #ced4da
+    background-color: #ffffff
+    border-color: #ced4da
+
+.btn-outline-dark
+    background-color: #ffffff
+    &:hover
+        color: #ffffff !important
+    &:focus,&:active:focus
+        box-shadow: (0 0 0 0.1rem rgba(33, 37, 41, 0.25))
+    
+.btn-warning
+    &:focus,&:active:focus
+        box-shadow:0 0 0 0.1rem rgba(217, 164, 6, 0.25) 
+.btn-danger
+    &:focus,&:active:focus
+        box-shadow:0 0 0 0.1rem rgba(225, 83, 97, 0.25)
+.btn-secondary
+    &:focus,&:active:focus
+        box-shadow:0 0 0 0.1rem rgba(130, 138, 145,  0.25)
+.btn-light
+    &:focus,&:active:focus
+        box-shadow:0 0 0 0.1rem rgba(211, 212, 213, 0.25)
+.btn-success
+    &:focus,&:active:focus
+        box-shadow:0 0 0 0.1rem rgba(60, 153, 110, 0.25)
+.btn-underlinefix
+    text-decoration:none
+    &:hover
+        text-decoration:(none !important)
+.text_short
+    text-overflow: ellipsis
+    white-space: nowrap
+    overflow: hidden
+
+.view_cards
+    padding-bottom:45px
+    .logo_short_1
+        position: absolute
+        left: 10px
+        top: 10px
+        width: 80px
+        height: 30px
+    .card
+        margin-bottom: 20px
+        &:hover
+            .card-head
+                .counter
+                    opacity: 1
+                    transition:0.4s
+                .buttons
+                    opacity: 1
+                    transition:0.4s
+                .placeholder
+                    opacity: 0.7
+                    transition:0.4s
+        .card-head
+            position: relative
+            .buttons
+                opacity: 0
+                position: absolute
+                right: 10px
+                top: 10px
+                transition:0.4s
+            .placeholder
+                opacity: 0
+                transition:0.4s
+            .counter
+                opacity: 0
+                width: 50px
+                line-height: 2em
+                background-color: #fff
+                position: absolute
+                left: 10px
+                bottom: 10px
+                text-align: center
+                transition:0.4s
+                
+    
+
+.logo_short_1
+    display: inline-block
+    width: 120px
+    height: 50px
+    padding: 5px
+    background-color: #ec008c
+    &.intable
+        width:80px
+        height:30px
+    i
+        display: block
+        width: 100%
+        height: 100%
+        background-image: url('https://dev.nahab.info/dev-qrcodes/assets/img/svg/logo_cosmopolitan.svg')
+        background-position: center
+        background-size: contain
+        background-repeat: no-repeat
+        background-origin: padding-box
+        filter: brightness(0) invert(1)
+    &[rel*='sp.imweb.ru'] 
+        background-color: #6f6c9e
+        i 
+            background-image: url('https://dev.nahab.info/dev-qrcodes/assets/img/svg/svg_logo_imedia.svg')
+    &[rel*='sp.cosmo.ru']
+        background-color: #ec008c
+        i 
+            background-image: url('https://dev.nahab.info/dev-qrcodes/assets/img/svg/logo_cosmopolitan.svg')
+    
+    &[rel*='sp.goodhouse.ru']
+        background-color: #117b80
+        i 
+            background-image: url('https://dev.nahab.info/dev-qrcodes/assets/img/svg/logo_domashny-ochag.svg')
+    
+    &[rel*='sp.popmech.ru'] 
+        background-color: #ff4f4f
+        i 
+            background-image: url('https://dev.nahab.info/dev-qrcodes/assets/img/svg/logo_popular-mechanics.svg')
+    
+    &[rel*='sp.esquire.ru'] 
+        background-color: #2066b7
+        i 
+            background-image: url('https://dev.nahab.info/dev-qrcodes/assets/img/svg/logo_esquire.svg')
+    
+    &[rel*='sp.robb.report']
+        background-color: #966e20
+        i 
+            background-image: url('https://dev.nahab.info/dev-qrcodes/assets/img/svg/logo_robb-report.svg')
+    
+    &[rel*='sp.bazaar.ru'] 
+        background-color: #000000
+        i 
+            background-image: url('https://dev.nahab.info/dev-qrcodes/assets/img/svg/logo_bazaar.svg')
+    
+    &[rel*='sp.graziamagazine.ru'] 
+        background-color: #000000
+        i 
+            background-image: url('https://dev.nahab.info/dev-qrcodes/assets/img/svg/logo_grazia.svg')
+    
+    &[rel*='sp.mhealth.ru'] 
+        background-color: #E90B1F
+        i 
+            background-image: url('https://dev.nahab.info/dev-qrcodes/assets/img/svg/logo_mens-health.svg')
+
+.share_modal, .share-preview
+    .modal-content
+        border:0
+    .modal-header, .modal-body
+        border:0
+        padding:0
+    .modal-header
+        position:absolute
+        top:10px
+        right:10px
+        z-index:3
+    .wrap
+        padding:10px
+    p
+        margin:0
+    .share_shortlink
+        font-size:12px
+        color:rgba(0,0,0,0.6)
+        min-width:0
+        text-overflow: ellipsis
+        white-space: nowrap
+        overflow: hidden
+    a.share_shortlink
+        text-decoration:none
+        &:hover
+            text-decoration:underline
+    .social_share_box
+        padding:0 10px
+    
+        
+.relbox
+    position:relative
+    .addbox
+        position:absolute
+        top:0
+        left:0
+    .seekbox
+        margin: 0 200px 0 160px
+    .visualbox
+        position:absolute
+        top:0
+        right:0
+        .btn
+            outline:(none !important)
+            box-shadow:(none  !important)
+            &.active
+                background-color: #ced4da
+                border-color: #ced4da
+                color:#fff
+.form_btn_box
+    display:flex
+    justify-content:space-between
+    .btns_right
+        .btn
+            margin-left:10px
+.box_w_btn
+    position:relative
+    opacity:0.1
+    transition:0.4s
+    &:hover
+        opacity:1
+        transition:0.4s
+    .btn_fly-right
+        position:absolute
+        top:10px
+        right:10px
+.bot_w_btn
+    position:relative
+    transition:0.4s
+    &-right
+        padding-right:0px
+        .btn_one_box
+            right:10px
+    &:hover
+        .btn_one_box
+            .show-on-hover
+                display:inline-block
+    .btn_one_box
+        position:absolute
+        top:10px
+        // width:44px
+        .btn
+            margin-left:10px
+        .show-on-hover
+            display:none
+.box_social_guides
+    margin:25px 0 25px !important
+    font-size:12px
+    padding:0 10px
+    a
+        color:var(--cblack)
+        text-decoration:(underline !important)
+        &:hover
+            text-decoration:underline
+.formbox
+    position:relative
+    // padding-right:130px
+.hotfix
+    @media(max-width:991px)
+        display:(block !important)
+.preview-info
+    // border-left:1px solid rgba(0,0,0, 0.25)
+    position:relative
+    // margin-top:40px
+    // padding-right:110px
+    a
+        color:var(--cblack)
+        text-decoration:none
+        // word-wrap:break-word
+        &:hover
+            text-decoration:underline
+    .text_short
+        display:block
+    &_qrlink
+        position:absolute
+        top:0
+        right:0
+        // padding-right:155px
+        min-height: 60px
+        // .logo_short_1
+        //     position:absolute
+        //     top:0
+        //     right:0
+        b
+            display:inline-block
+            min-width:210px
+        .preview-line
+            // margin-bottom:10px
+            padding:10px 5px
+            display:flex
+            align-items:center
+            // justify-content:space-between
+            justify-content:center
+            margin-bottom:25px
+            &_label
+                display:none
+            // &:nth-child(even)
+            //     background:var(--bg)
+    .qr_imgbox 
+        position:absolute
+        top:0
+        right:0
+        max-width:80px
+        width:100%
+    .share-preview
+        max-width:526px
+        margin-left:20px
+        @media(max-width:1199px)
+            max-width:350px
+        @media(max-width:991px)
+            margin:20px 0 0 0
+        .imgbox, .share_img
+            display:inline-block
+            margin-bottom:10px
+            width:100%
+            padding:0 !important
+        .share_head 
+            font-size:1.5rem
+            margin-bottom:0.5rem
+            font-weight: 500
+            min-height:36px
+        .share_dicr 
+            margin-bottom:5px
+            min-height:24px
+        .share_link 
+            font-size: 12px
+            line-height:14px
+            min-height:16px
+            
+        .share_w_placeholde
+            position: relative
+            overflow:hidden
+            padding:5px 10px
+            border-radius:0.25rem
+            &:before
+                position:absolute
+                top:0
+                left:0
+                content:''
+                height: 100%
+                width: 100%
+                background-color: rgb(211,211,211)
+                z-index: 44
+                opacity:0.7
+            &:after
+                content:''
+                position: absolute
+                top:0
+                left: -45%
+                height: 100%
+                width: 45%
+                background-image: linear-gradient(to left, rgba(251,251,251, .05), rgba(251,251,251, .3), rgba(251,251,251, .6), rgba(251,251,251, .3), rgba(251,251,251, .05))
+                background-image: -moz-linear-gradient(to left, rgba(251,251,251, .05), rgba(251,251,251, .3), rgba(251,251,251, .6), rgba(251,251,251, .3), rgba(251,251,251, .05))
+                background-image: -webkit-linear-gradient(to left, rgba(251,251,251, .05), rgba(251,251,251, .3), rgba(251,251,251, .6), rgba(251,251,251, .3), rgba(251,251,251, .05))
+                animation: loading 1s infinite
+                z-index: 45
+            &.showme
+                &:before, &:after
+                    display:none
+        &.show_placeholder
+        
+            .share_w_placeholde:before, .share_w_placeholde:after
+                display:(inline !important)
+                opacity:1
+
+    
+
+@keyframes loading 
+  0%
+    left: -45%
+  
+  100%
+    left: 100%
+  
+
+        
+.social_share_box
+    margin-top:15px
+    p
+        font-size:14px
+        margin-bottom:5px
+.popup_in
+    position:absolute
+    top:0
+    left:0
+    right:0
+    bottom:0
+    z-index:200
+    &:before
+        content:''
+        position:fixed
+        top:0
+        left:0
+        right:0
+        bottom:0
+        background:#000
+        opacity:0.3
+        z-index:1
+    &-content
+        position:absolute
+        top:50%
+        left:50%
+        background:#fefefe
+        padding:25px
+        border-radius:0.3rem
+        -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2)
+        -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2)
+        box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2)
+        transform: translate(-50%, -50%)
+        z-index:2
+        &_head
+            margin-bottom:30px
+        &_buttons
+            display:flex
+            justify-content:space-between
+            .btns_left
+                .btn:last-child
+                    margin-left:10px
+    .btn
+        font-size: 16px
+        line-height: 22px
+
+.card-share
+    &:hover
+        transition:0.4s
+        .share_img
+            &:after
+                transition:0.4s
+                opacity:0.5
+    .share_img
+        position:absolute
+        top:0
+        left:0
+        right:0
+        bottom:0
+        &:after
+            content:''
+            background:#eee
+            opacity:0
+            position:absolute
+            top:0
+            left:0
+            right:0
+            bottom:0
+            transition:0.4s
+    .placeholder
+        opacity:1 !important
+    .card-body
+        padding:15px 5px
+    .share_w_placeholde
+        position: relative
+        overflow:hidden
+        padding:5px 10px
+        border-radius:0.25rem
+        &:before
+            position:absolute
+            top:0
+            left:0
+            content:''
+            height: 100%
+            width: 100%
+            background-color: rgb(211,211,211)
+            z-index: 44
+            opacity:0.7
+        &:after
+            content:''
+            position: absolute
+            top:0
+            left: -45%
+            height: 100%
+            width: 45%
+            background-image: linear-gradient(to left, rgba(251,251,251, .05), rgba(251,251,251, .3), rgba(251,251,251, .6), rgba(251,251,251, .3), rgba(251,251,251, .05))
+            background-image: -moz-linear-gradient(to left, rgba(251,251,251, .05), rgba(251,251,251, .3), rgba(251,251,251, .6), rgba(251,251,251, .3), rgba(251,251,251, .05))
+            background-image: -webkit-linear-gradient(to left, rgba(251,251,251, .05), rgba(251,251,251, .3), rgba(251,251,251, .6), rgba(251,251,251, .3), rgba(251,251,251, .05))
+            animation: loading 1s infinite
+            z-index: 45
+        &.showme
+            &:before, &:after
+                display:none
+    .text_head 
+        font-size:20px
+        font-weight: 500
+        line-height: 1.2
+        margin:0 0 5px
+        min-height:24px
+    .text_descr
+        margin-bottom:5px
+        font-size:14px
+        min-height:21px
+    .text_link
+        font-size:12px
+    .social_share_box
+        display: flex
+        justify-content: space-between
+        
+.form-switch>label
+    opacity:0.4
+    font-size:14px
+.form-floating>label
+    opacity:0.4
+    font-size:14px
+.form-control
+    &.error
+        border-color:red
+        box-shadow:0 0 0 1px #f00
+#__react-alert__
+    a
+        color:#fff !important
+        text-decoration:underline
+        &:hover
+            color:#fff !important
+            text-decoration:underline
+.shareimg_modalhead
+    position:relative
+    .share_img
+        position:absolute
+        top:0
+        left:0
+        right:0
+        bottom:0
+#site_wrap 
+    padding:75px 0 45px
+    color:var(--cblack)
+    min-width:768px
+    h1
+        margin:0 auto 2vh
+        // text-align:center
+    a
+        color:var(--cblack)
+        text-decoration:none
+        &:hover
+            text-decoration:underline
+    .btn_refresh 
+        // position:fixed
+        // bottom:20px
+        // right:20px
+        // z-index:300
+        width:42px
+        opacity: 0.3
+        transition:0.4s
+        .timer
+            display:block
+        .icon
+            display:none
+        &:hover
+            opacity: 1
+            transition:0.4s
+            .timer
+                display:none
+            .icon
+                display:block
+    .bnt_faq
+        width:32px
+        height:32px
+        display:flex
+        align-items:center
+        justify-content:center
+        background:#fff
+        border-radius:50%
+        position:fixed
+        bottom:15px
+        right:15px
+        z-index:3000
+        -webkit-box-shadow: 0px 0px 8px 0px #000000 
+        box-shadow: 0px 0px 8px 0px #000000
+        overflow:hidden
+        transition:0.4s
+        &:hover
+            transition:0.4s
+
+    .topfixed
+        opacity: 0.985
+        background:#fff
+        position:fixed
+        top:0
+        left:0
+        right:0
+        padding:1.5vh var(--bs-gutter-x,.75rem) 
+        z-index:3
+        -webkit-box-shadow: 0px 5px 15px -5px rgba(34, 60, 80, 0.2)
+        -moz-box-shadow: 0px 5px 15px -5px rgba(34, 60, 80, 0.2)
+        box-shadow: 0px 5px 15px -5px rgba(34, 60, 80, 0.2)
+    .tb_ids 
+        line-height:12px
+        justify-content:space-between
+    .tb_date_info
+        font-size:10px
+    .btn_table_box
+        .btn-secondary
+            color:#fff
+    .dflex
+        display:flex
+    .dotsbox
+        position:relative
+        min-width:0
+        padding: 0 5px
+        border-bottom: 1px dotted #f1f1f1
+        text-overflow: ellipsis
+        white-space: nowrap
+        overflow: hidden
+    .vr 
+        display: inline-block
+        align-self: stretch
+        width: 1px
+        min-height: 1em
+        background-color: currentColor
+        opacity: .25
+    .icons_box
+        display:inline-block
+        font-size:23px
+        line-height:1em
+        color:var(--cblack)
+        text-decoration:none
+        padding:5px
+        margin:0 2px
+        border-radius:5px
+        background:var(--bg)
+        text-align:center
+        &.active
+            background:var(--alt)
+    .hint
+        color:rgba(0,0,0,0.5)
+        font-size:12px
+        display:block
+        text-align:center
+        margin-top:5px
+    .btn-info
+        padding: 8px
+        font-size: 26px
+        background-color:var(--sty2)
+        color:#fff
+
+    .share_img_upload
+        padding-right:60px
+        position:relative
+        .box_upload_share
+            position:absolute
+            right:0
+            top:0
+
+.listviewer
+    display: grid
+    border-collapse: collapse
+    min-width: 100%
+    grid-template-columns: minmax(150px, 3.5fr) minmax(150px, 3.5fr) minmax(150px, 1fr)
+    font-size:12px
+    padding-bottom:50px
+    .list-elem 
+        padding:2px 4px
+    .dotsbox
+        padding: .2rem .3rem !important
+        border-bottom: 1px dotted #dddddd
+        border-right: 1px dotted #dddddd
+        transition:0.4s
+        &:hover
+            background:var(--bg)
+            transition:0.4s
+    &-checkurl
+        grid-template-columns: minmax(150px, 3.55fr) minmax(150px, 3.45fr)
+        .list-elem 
+            padding:2px 0
+        .dotsbox
+            padding:1px 2px
+        .dotsbox:nth-child(even)
+            &:hover
+                background:transparent
+        .dotsbox:nth-child(odd)
+            background:var(--bg)
+            
+            
+.magictable
+    font-size:12px
+    font-weight: 200
+    margin-bottom:45px
+    thead, tbody
+        display: contents
+        position:relative
+    th,td 
+        padding: 7px
+        overflow: hidden
+        text-overflow: ellipsis
+        white-space: nowrap
+    .btn_table_box
+        position:absolute
+        top:0
+        right:0
+        bottom:0
+        padding: 0 5px
+        background-color:var(--bg)
+        transition:0.4s
+        opacity:0
+        a
+            color:#fff
+        .btn
+            margin-left:5px
+    th
+        font-size: 12px
+        font-weight: 500
+        padding-bottom:10px
+        text-align:left
+    tr
+        position:relative
+        display: grid
+        border-collapse: collapse
+        min-width: 100%
+        grid-template-columns: 70px 115px 55px 95px minmax(150px, 2fr) minmax(150px, 3fr) 65px
+        transition:0.4s
+    td
+        display:flex
+        align-items:center
+        &.tb_date_info, &.tb_shows, &.tb_share
+            justify-content:center
+        &.tb_site
+            opacity: 0.7
+    
+    tbody
+        tr
+            &:hover
+                background-color:var(--bg)
+                transition:0.4s
+                .btn_table_box
+                    opacity:1
+                    background-color:var(--bg)
+                    transition:0.4s
+                    
+                td
+                    &.tb_site
+                        opacity: 1
+
+    /* flex responsive
+    .magictable
+        font-size:14px
+        display:block
+        width:100%
+        tbody,thead
+            display:block
+            width:100%
+        tr
+            display:flex
+            position:relative
+            &:hover
+                background-color:var(--bg)
+                .btn_table_box
+                    display:block
+        th
+            font-size:14px
+        td
+            display: flex
+            align-items: center
+        .tb_date_info 
+            flex-basis:115px
+            min-width:115px
+        .tb_site
+            flex-basis:95px
+            min-width:95px
+        .tb_qr_link
+            flex-basis:500px
+            min-width:500px
+            @media(max-width:1199px)
+                flex-basis:320px
+                min-width:320px
+        .tb_full_link
+            flex:1 1 auto
+            min-width:0
+        .tb_shows
+            flex-basis:105px
+            min-width:105px
+            justify-content:center
+        .tb_share
+            flex-basis:85px
+            min-width:85px
+        .tb_edit
+            flex-basis:136px
+            min-width:136px
+        .btn_table_box
+            display:none
+            position:absolute
+            top:0
+            right:0
+            bottom:0
+            padding: 4px
+            background-color:var(--bg)
+.sharebox
+    position:relative
+    // padding-right:65px
+    &-magicbtn
+        position:absolute
+        top: -46px
+        right: 10px
+        // bottom:0
+        // button
+        //     height:100%
+
+.modal
+    .btn_close
+        
+        font-size:35px
+        line-height: 23px
+        color:#fff
+        padding:0
+        margin:0
+        border:0
+        outline:none
+        position:absolute
+        top:10px
+        right:10px
+        box-shadow:(none !important)
+    .icons_box
+        display:inline-block
+        font-size:23px
+        line-height:1em
+        color:var(--cblack)
+        text-decoration:none
+        padding:5px
+        margin:0 2px
+        border-radius:5px
+        background:var(--bg)
+        text-align:center
+        &.active
+            background:var(--alt)
+            
+    .btn-info
+        padding: 8px
+        font-size: 26px
+        background-color:var(--sty2)
+        color:#fff
+    .box3col
+        display:block
+        position:relative
+        padding:0 0px 0 300px
+        margin-bottom:2vh
+        @media(max-width:670px)
+            padding:0
+        &_col-l
+            width:280px
+            position:absolute
+            left:0
+            top:0
+            @media(max-width:670px)
+                width:100%
+                position:relative
+                left:auto
+                right:auto
+                margin-bottom:2vh
+        &_col-c
+            width:100%
+            &:hover
+                .box3col_col-r
+                    .show-on-hover
+                        display:inline-block
+            // .error+label
+            //     &:after
+            //         content:'Такой токен уже существует'
+            //         position:absolute
+            //         bottom: -42px
+            //         left: 20px
+            //         color: #f00
+            //         width: 1000px
+        &_col-r
+            position:absolute
+            top:10px
+            right:10px
+            // width:44px
+            @media(max-width:670px)
+                top:auto
+                bottom:10px
+            a, button
+                margin-left:10px
+            .show-on-hover
+                display:none
+            .btn-warning
+                &:disabled
+                    display:none
+    .share_img_upload
+        // padding-right:60px // пока нет кнопки
+        position:relative
+        .box_upload_share
+            position:absolute
+            right:10px
+            top:10px
+ 
+            
+            
+    .CodeMirror 
+        border: 1px solid #eee
+        height: auto
+    
+    
+    .codemirror-highlighted 
+        background-color: red
+    
+.form_multi
+    // padding-top:40px
+
+.modal-dialog-centered-custom
+    max-width: calc(100% - 3rem)
+    .modal-body
+        padding: 3rem 2rem
+
+.modal
+    padding-right: 0 !important
